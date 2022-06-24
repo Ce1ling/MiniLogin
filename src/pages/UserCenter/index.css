@@ -1,0 +1,26 @@
+.avatar-container { 
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  flex-direction: column;
+}
+.avatar {
+  width: 80px;
+  border-radius: 50%;
+}
+.user-data {
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: gray;
+}
+.user-name {
+  margin: 15px 0;
+}
+.logout {
+  width: 100%;
+  margin-top: 50px;
+}
+.nickName,
+.phoneNumber {
+  width: 90%;
+}
