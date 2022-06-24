@@ -49,7 +49,6 @@ export default class Login extends Component {
   loginBtn = () => {
     const { phone, verifyCode,createVerifyCode } = this.state;
     if (phone && (createVerifyCode === verifyCode)) {
-      this.setState({token: true});
       Toast.success('登录成功，欢迎您');
       sessionStorage.setItem('token', 'encrypt');   // 模仿token
       this.props.history.push(`/usercenter?pnumber=${phone}&uname=${phone}`);
